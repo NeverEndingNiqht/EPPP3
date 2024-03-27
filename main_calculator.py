@@ -8,7 +8,7 @@ import distance_calculator as distance
 import tax_calculator as tax
 import circle_calculator as circle
 import square_calculator as square
-import pythagoras_calculator as pythagoras
+import EPPP3.pythagoras_calculator as pythagoras
 
 import tkinter as tk
 from tkinter import ttk
