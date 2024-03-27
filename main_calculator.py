@@ -8,13 +8,13 @@ import distance_calculator as distance
 import tax_calculator as tax
 import circle_calculator as circle
 import square_calculator as square
-import EPPP3.pythagoras_calculator as pythagoras
+import pythagoras_calculator as pythagoras
 
 import tkinter as tk
 from tkinter import ttk
 
 # Start the main event loop
-class RekentoolApp:
+class CalculatorApp:
     def __init__(self):
         self.window = tk.Tk()  # Define the "window" variable
         self.window.title("Rekentool")
@@ -35,7 +35,7 @@ class RekentoolApp:
         self.notebook.add(self.distance_screen, text="Afstand")
         self.notebook.add(self.tax_screen, text="BTW")
         self.notebook.add(self.circle_screen, text="Cirkel")
-        self.notebook.add(self._screen, text="Vierkant")
+        self.notebook.add(self.square_screen, text="Vierkant")
         self.notebook.add(self.pythagoras_screen, text="Pythagoras")
 
     def run(self):
@@ -43,5 +43,5 @@ class RekentoolApp:
         self.window.mainloop()
 
 # Create an instance of the RekentoolApp class
-window = RekentoolApp()
+window = CalculatorApp()
 window.run()
