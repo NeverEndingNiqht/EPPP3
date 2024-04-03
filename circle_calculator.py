@@ -5,6 +5,7 @@ Opdracht: P3.6 Eindopdracht van Joost, Floris, Lucas, Wouter en Luca
 """
 
 import tkinter as tk
+from math import pi
 from tkinter import ttk
 
 class CircleScreen(tk.Frame):
@@ -32,7 +33,7 @@ class CircleScreen(tk.Frame):
         radius_length = float(self.radius_entry.get())
         
         # Calculate the area of the square
-        area = 3.14159 * radius_length**2
+        area = pi * radius_length**2
         
         # Display the result
-        self.result_label.config(text=f"Area: {area}")
+        self.result_label.config(text=f"Area: {area:.2f}")
