@@ -14,7 +14,7 @@ class PythagorasScreen(tk.Frame):
         
         # Create and configure the widgets for the Pythagoras screen
         self.label = ttk.Label(self, text="Pythagoras Rekentool")
-        self.label.pack()
+        self.label.pack(pady=10)
 
         # Add more widgets and functionality as needed
         
@@ -29,7 +29,7 @@ class PythagorasScreen(tk.Frame):
         self.side_b_entry.pack()
 
         self.calculate_button = ttk.Button(self, text="Bereken", command=self.calculate_side_c)
-        self.calculate_button.pack()
+        self.calculate_button.pack(pady=10)
 
         self.result_label = ttk.Label(self, text="")
         self.result_label.pack()

@@ -13,7 +13,7 @@ class DistanceScreen(tk.Frame):
         
         # Create and configure the widgets for the Afstand screen
         self.label = ttk.Label(self, text="Afstand Rekentool")
-        self.label.pack()
+        self.label.pack(pady=10)
 
         # Add more widgets and functionality as needed
         
@@ -28,7 +28,7 @@ class DistanceScreen(tk.Frame):
         self.speed_entry.pack()
 
         self.calculate_button = ttk.Button(self, text="Bereken", command=self.calculate_time)
-        self.calculate_button.pack()
+        self.calculate_button.pack(pady=10)
 
         self.result_label = ttk.Label(self, text="")
         self.result_label.pack()
