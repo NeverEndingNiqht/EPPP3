@@ -1,6 +1,6 @@
 """
 20-03-2024
-Lucas*-+ de Jongh
+Programmeur: Lucas de Jongh
 Opdracht: P3.6 Eindopdracht van Joost, Floris, Lucas, Wouter en Luca
 """
 
