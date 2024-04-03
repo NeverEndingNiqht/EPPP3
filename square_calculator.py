@@ -1,6 +1,6 @@
 """
 20-03-2024
-Programmeur: Lucas de Jongh
+Lucas*-+ de Jongh
 Opdracht: P3.6 Eindopdracht van Joost, Floris, Lucas, Wouter en Luca
 """
 
@@ -11,7 +11,7 @@ class SquareScreen(tk.Frame):
     def __init__(self, parent):
         super().__init__(parent)
         
-        # Create the widgets for the Vierkant screen
+        # Maak de widgets voor het Vierkant scherm
         self.label = ttk.Label(self, text="Vierkant Rekentool")
         self.label.pack(pady=10)
         
@@ -28,11 +28,11 @@ class SquareScreen(tk.Frame):
         self.result_label.pack()
         
     def calculate_area(self):
-        # Get the side length from the entry widget
+        # Haal de lengte van de zijde op uit het invoerveld
         side_length = float(self.side_entry.get())
         
-        # Calculate the area of the square
+        # Bereken het oppervlak van het vierkant
         area = side_length ** 2
         
-        # Display the result
+        # Toon het resultaat
         self.result_label.config(text=f"Area: {area}")
