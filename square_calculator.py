@@ -11,7 +11,7 @@ class SquareScreen(tk.Frame):
     """
     A class representing the SquareScreen widget.
     """
-    
+
     def __init__(self, parent) -> None:
         """
         Initializes the SquareScreen class.
@@ -28,10 +28,10 @@ class SquareScreen(tk.Frame):
         self.side_label: ttk.Label = ttk.Label(self, text="Lengte zijde:")
         self.side_label.pack()
         
-        self.side_entry: ttk.Label = ttk.Entry(self)
+        self.side_entry: ttk.Entry = ttk.Entry(self)
         self.side_entry.pack()
         
-        self.calculate_button: ttk.Label = ttk.Button(self, text="Bereken", command=self.calculate_area)
+        self.calculate_button: ttk.Button = ttk.Button(self, text="Bereken", command=self.calculate_area)
         self.calculate_button.pack(pady=10)
         
         self.result_label: ttk.Label = ttk.Label(self, text="")

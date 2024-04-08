@@ -47,6 +47,3 @@ class TaxScreen(tk.Frame):
             self.result_label.configure(text=f"BTW: {btw_amount:.2f}, Totaal: {total_amount:.2f}")
         except ValueError:
             self.result_label.configure(text="Ongeldige invoer.")
-
-if __name__ == "__main__":
-    window: TaxScreen = TaxScreen()

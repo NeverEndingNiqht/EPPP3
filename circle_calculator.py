@@ -29,10 +29,10 @@ class CircleScreen(tk.Frame):
         self.radius_label: ttk.Label = ttk.Label(self, text="Straal:")
         self.radius_label.pack()
         
-        self.radius_entry: ttk.Label = ttk.Entry(self)
+        self.radius_entry: ttk.Entry = ttk.Entry(self)
         self.radius_entry.pack()
         
-        self.calculate_button: ttk.Label = ttk.Button(self, text="Bereken", command=self.calculate_area)
+        self.calculate_button: ttk.Button = ttk.Button(self, text="Bereken", command=self.calculate_area)
         self.calculate_button.pack(pady=10)
         
         self.result_label: ttk.Label = ttk.Label(self, text="")
@@ -43,7 +43,7 @@ class CircleScreen(tk.Frame):
         Calculates the area of a circle based on the entered radius.
         :return: None
         """
-        
+
         # Get the radius from the entry widget
         radius_length: float = float(self.radius_entry.get())
         
