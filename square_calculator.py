@@ -25,7 +25,7 @@ class SquareScreen(tk.Frame):
         self.side_entry = ttk.Entry(self.entry_frame)
         self.side_entry.pack(side=tk.LEFT)
 
-        self.unit_label = ttk.Label(self.entry_frame, text="m²")
+        self.unit_label = ttk.Label(self.entry_frame, text="m")
         self.unit_label.pack(side=tk.LEFT)
 
 
@@ -43,4 +43,4 @@ class SquareScreen(tk.Frame):
         area = side_length ** 2
         
         # Toon het resultaat
-        self.result_label.config(text=f"Area: {area} m^2" )
+        self.result_label.config(text=f"Area: {area} m²" )
