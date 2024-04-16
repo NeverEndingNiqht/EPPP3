@@ -27,7 +27,7 @@ class CalculatorApp:
 
         self.window: tk.Tk = tk.Tk()  # Define the "window" variable
         self.window.title("Rekentool")
-        self.window.geometry("300x200")
+        self.window.geometry("400x300")
 
         # Create a notebook widget to hold the screens
         self.notebook: ttk.Notebook = ttk.Notebook(self.window)
