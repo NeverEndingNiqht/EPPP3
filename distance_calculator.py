@@ -30,7 +30,7 @@ class DistanceScreen(tk.Frame):
         self.distance_entry: ttk.Entry = ttk.Entry(self)
         self.distance_label.pack()
         self.distance_entry.pack()
-
+        #dit is voor het assesment 
         self.speed_label: ttk.Label = ttk.Label(self, text="Snelheid (in km/h):")
         self.speed_entry: ttk.Entry = ttk.Entry(self)
         self.speed_label.pack()
